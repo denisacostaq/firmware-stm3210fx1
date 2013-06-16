@@ -1,17 +1,18 @@
+nbproject/
+doc/html/
+src/.deps/
+
+Makefile
+
 # Object files
 *.o
 
-# Libraries
-*.lib
-*.a
+#Binaries
+*.as
+*.map
+*.axf
+*.hex
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
+#este seria el de make log
+*.txt
+!doc/file.txt
