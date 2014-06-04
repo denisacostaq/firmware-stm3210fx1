@@ -10,9 +10,10 @@ CLEANFILES = \
 EXTRA_DIST = \
 	./common
 
+AUTOMAKE_OPTIONS = subdir-objects
+
 #Add the directory dir to the list of directories to be searched for header files.
-AM_CPPFLAGS= \
-	-I $(top_builddir)/src/Source
+AM_CPPFLAGS =  -I $(top_builddir)/src/Source
 
 LDSCRIPT = ./common/KERNEL/stm32_flash.ld
 
@@ -59,3 +60,4 @@ $(PACKAGE_NAME).axf: $(firmware_stm3210fx1_OBJECTS) Makefile
 
 hex : $(PACKAGE_NAME).axf
 	$(host_alias)-objcopy $(PACKAGE_NAME).axf -O ihex $(PACKAGE_NAME).hex
+

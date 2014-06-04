@@ -1,9 +1,12 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 AC_PREREQ([2.69])
-AC_INIT([firmware-stm3210fx1], [0.0.0], [denisacostaq@gmail.com])
+AC_INIT([template-stm3210fx1],
+		[0.0.0], [denisacostaq@gmail.com],
+		[tstm3210fx1],
+		[https://github.com/denisacostaq/template-stm3210fx1.git])
 
-AM_INIT_AUTOMAKE([1.13.2 filename-length-max=256 tar-ustar -Wall])
+AM_INIT_AUTOMAKE([1.14.1 filename-length-max=256 tar-ustar -Wall])
 
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
