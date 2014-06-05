@@ -1,1 +1,0 @@
-Source/firmware_stm3210fx1-main.o: Source/main.c

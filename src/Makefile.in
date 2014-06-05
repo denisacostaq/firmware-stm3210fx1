@@ -267,9 +267,7 @@ EXTRA_DIST = \
 AUTOMAKE_OPTIONS = subdir-objects
 
 #Add the directory dir to the list of directories to be searched for header files.
-AM_CPPFLAGS = \
-	-I $(top_builddir)/src/Source
-
+AM_CPPFLAGS = -I $(top_builddir)/src/Source
 LDSCRIPT = ./common/KERNEL/stm32_flash.ld
 SOURCE = \
 	./Source/main.c
